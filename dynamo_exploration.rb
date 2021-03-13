@@ -41,7 +41,17 @@ require 'aws-sdk-dynamodb'
 
 def create_table
   @ddb_client.create_table({
-    # TODO: Fill this in
+    table_name: 'flights',
+    key_schema: [
+
+    ],
+    attribute_definitions: [
+
+    ],
+    provisioned_thoughput: {
+      read_capacity_units: 10,
+      write_capacity_units: 10
+    }
   })
 end
 
