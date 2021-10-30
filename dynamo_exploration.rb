@@ -95,24 +95,10 @@ def map_row_to_entity(entity, schema)
 end
 
 
-#
-# 1. List the distinct flight numbers of all flights from Seattle to Boston by Alaska Airlines Inc. on Mondays.
-# Also notice that, in the database, the city names include the state. So Seattle appears as Seattle WA.
-#
-# [Hint: Output relation cardinality: 3 rows]
 def query_one
   @ddb_client.query()
 end
 
-# Find all itineraries from Seattle to Boston on July 15th. Search only for itineraries that have one stop (i.e., flight 1: Seattle -> [somewhere], flight2: [somewhere] -> Boston).
-# Both flights must depart on the same day (same day here means the date of flight) and must be with the same carrier. It's fine if the landing date is different from the departing date (i.e., in the case of an overnight flight). You don't need to check whether the first flight overlaps with the second one since the departing and arriving time of the flights are not provided.
-# The total flight time (actual_time) of the entire itinerary should be fewer than 7 hours (but notice that actual_time is in minutes).
-# For each itinerary, the query should return the name of the carrier, the first flight number,
-# the origin and destination of that first flight, the flight time, the second flight number,
-# the origin and destination of the second flight, the second flight time, and finally the total flight time.
-# Only count flight times here; do not include any layover time.
-# Name the output columns name as the name of the carrier, f1_flight_num, f1_origin_city, f1_dest_city, f1_actual_time, f2_flight_num, f2_origin_city, f2_dest_city, f2_actual_time, and actual_time as the total flight time. List the output columns in this order.
-# [Output relation cardinality: 1472 rows]
 def query_two
   @ddb_client.query()
 end
