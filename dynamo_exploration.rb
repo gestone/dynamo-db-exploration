@@ -115,25 +115,14 @@ def query_five
   @ddb_client.query()
 end
 
-# (10 points) Find the maximum price of tickets between Seattle and New York, NY (i.e. Seattle to NY or NY to Seattle).
-# Show the maximum price for each airline separately.
-# Name the output columns carrier and max_price, in that order.
-# [Output relation cardinality: 3 rows]
 def query_six
   @ddb_client.query()
 end
 
-# (10 points) Find the total capacity of all direct flights that fly between Seattle and San Francisco, CA on July 10th (i.e. Seattle to SF or SF to Seattle).
-# Name the output column capacity.
-# [Output relation cardinality: 1 row]
 def query_seven
   @ddb_client.query()
 end
 
-# (10 points) Compute the total departure delay of each airline
-# across all flights.
-# Name the output columns name and delay, in that order.
-# [Output relation cardinality: 22 rows]
 def query_eight
   @ddb_client.query()
 end
