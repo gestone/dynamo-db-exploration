@@ -103,29 +103,14 @@ def query_two
   @ddb_client.query()
 end
 
-# Find the day of the week with the longest average arrival delay.
-# Return the name of the day and the average delay.
-# Name the output columns day_of_week and delay, in that order. (Hint: consider using LIMIT. Look up what it does!)
-# [Output relation cardinality: 1 row]
 def query_three
   @ddb_client.query()
 end
 
-# Find the names of all airlines that ever flew more than 1000 flights in one day
-# (i.e., a specific day/month, but not any 24-hour period).
-# Return only the names of the airlines. Do not return any duplicates
-# (i.e., airlines with the exact same name).
-# Name the output column name.
-# [Output relation cardinality: 12 rows]
 def query_four
   @ddb_client.query()
 end
 
-# (10 points) Find all airlines that had more than 0.5 percent of their flights out of Seattle be canceled.
-# Return the name of the airline and the percentage of canceled flight out of Seattle.
-# Order the results by the percentage of canceled flights in ascending order.
-# Name the output columns name and percent, in that order.
-# [Output relation cardinality: 6 rows]
 def query_five
   @ddb_client.query()
 end
